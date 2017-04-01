@@ -1,5 +1,5 @@
 import {ActionTypes} from "./actionTypes";
-import {IPageData, PageData} from "../data/templateData";
+import {IPageData, PageData} from "../data/pageData";
 
 // Method to load the data for the page.
 export function loadData() {

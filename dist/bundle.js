@@ -16001,13 +16001,13 @@ exports.Navigation = Navigation;
 "use strict";
 
 var actionTypes_1 = __webpack_require__(188);
-var templateData_1 = __webpack_require__(584);
+var pageData_1 = __webpack_require__(584);
 // Method to load the data for the page.
 function loadData() {
     // Return a dispatch
     return function (dispatch) {
         // Load the data and return the promise
-        return templateData_1.PageData.load().then(function (data) {
+        return pageData_1.PageData.load().then(function (data) {
             // Resolve the promise
             dispatch({
                 type: actionTypes_1.ActionTypes.LoadData,
