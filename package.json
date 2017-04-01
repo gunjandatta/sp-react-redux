@@ -5,7 +5,7 @@
   "main": "dist/bundle.js",
   "scripts": {
     "build": "webpack",
-    "test": "webpack-dev-server ./src --hot --inline --module-bind --colors --progress"
+    "test": "webpack-dev-server ./src --hot --inline --colors --progress"
   },
   "repository": {
     "type": "git",
