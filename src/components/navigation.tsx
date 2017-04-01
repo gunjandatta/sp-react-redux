@@ -1,5 +1,5 @@
 import * as React from "react";
-import {IPageData} from "../data/templateData";
+import {IPageData} from "../data/pageData";
 import {
     Pivot, PivotItem,
     Spinner
