@@ -5,7 +5,7 @@
   "main": "dist/bundle.js",
   "scripts": {
     "build": "webpack",
-    "test": "webpack-dev-server --hot --inline --colors --progress"
+    "test": "webpack-dev-server ./src --hot --inline --module-bind --colors --progress"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/gunjandatta/sp-react-redux#readme",
   "dependencies": {
-    "gd-sprest": "^1.2.9",
+    "gd-sprest": "^1.3.1",
     "office-ui-fabric-react": "^2.10.4",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
