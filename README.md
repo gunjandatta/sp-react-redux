@@ -1,2 +1,4 @@
 # sp-react-redux
-SharePoint Project template using React and Redux.
+SharePoint starter project using React and Redux.
+
+This project is referenced from this [blog post](http://dattabase.com/reactredux-starter-project/).
