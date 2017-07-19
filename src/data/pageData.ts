@@ -1,9 +1,5 @@
-import {Promise} from "es6-promise";
-import {
-    ContextInfo,
-    List,
-    Types
-} from "gd-sprest";
+import { Promise } from "es6-promise";
+import { ContextInfo, List } from "gd-sprest";
 
 /**
  * Interface
@@ -21,7 +17,7 @@ export class PageData {
         // Return a promise
         return new Promise((resolve, reject) => {
             // See if the SP environment exists
-            if(ContextInfo.existsFl) {
+            if (ContextInfo.existsFl) {
                 // Get the list
                 (new List("PageData"))
                     // Get the items
@@ -32,13 +28,13 @@ export class PageData {
                         Select: ["ID", "Title"]
                     })
                     // Execute the request
-                    .execute((items:Types.IListItems) => {
-                        let data:Array<IPageData> = [];
+                    .execute((items) => {
+                        let data: Array<IPageData> = [];
 
                         // Ensure the items exists
-                        if(items.existsFl) {
+                        if (items.results) {
                             // Parse the items
-                            for(let item of items.results) {
+                            for (let item of items.results) {
                                 // Add the item
                                 data.push({
                                     Title: item["Title"]
